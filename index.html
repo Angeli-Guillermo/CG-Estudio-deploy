@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CG Estudio Asociados — Estudio jurídico en CABA especializado en derecho civil, corporativo, laboral y contratos. Atención a cargo de socios docentes activos de la Facultad de Derecho de la UBA.">
+  <title>CG Estudio Asociados | Abogados en CABA — Derecho Civil, Laboral y Corporativo</title>
+  <link rel="canonical" href="https://cgestudioasociados.com.ar/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#1A2E4A">
+  <meta name="author" content="CG Estudio Asociados">
+  <meta name="geo.region" content="AR-C">
+  <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CG Estudio Asociados">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="CG Estudio Asociados | Abogados en CABA">
+  <meta property="og:description" content="Estudio jurídico en CABA con respaldo académico: socios docentes de la Facultad de Derecho de la UBA. Derecho civil, corporativo, laboral y contratos.">
+  <meta property="og:url" content="https://cgestudioasociados.com.ar/">
+  <meta property="og:image" content="https://cgestudioasociados.com.ar/img/hero-bg.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CG Estudio Asociados | Abogados en CABA">
+  <meta name="twitter:description" content="Estudio jurídico en CABA con respaldo académico (UBA). Derecho civil, corporativo, laboral y contratos.">
+  <meta name="twitter:image" content="https://cgestudioasociados.com.ar/img/hero-bg.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Structured data: LegalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "CG Estudio Asociados",
+    "description": "Estudio jurídico en CABA especializado en derecho civil, corporativo, laboral y contratos, a cargo de socios docentes de la Facultad de Derecho de la UBA.",
+    "url": "https://cgestudioasociados.com.ar/",
+    "image": "https://cgestudioasociados.com.ar/img/hero-bg.jpg",
+    "email": "cg.estudio.asociados@gmail.com",
+    "areaServed": "Ciudad Autónoma de Buenos Aires, Argentina",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad Autónoma de Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "knowsLanguage": "es",
+    "serviceType": ["Derecho Civil", "Derecho Corporativo", "Derecho Laboral", "Contratos"],
+    "employee": [
+      { "@type": "Person", "name": "Vanina Marisel Cesari", "jobTitle": "Abogada · Socia · Delegada Liquidadora (SSN) · Docente Facultad de Derecho (UBA)" },
+      { "@type": "Person", "name": "Joaquín Goldaracena", "jobTitle": "Abogado · Socio · Docente Facultad de Derecho (UBA)" }
+    ],
+    "contactPoint": [
+      { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+5491163063149", "email": "cg.estudio.asociados@gmail.com", "areaServed": "AR", "availableLanguage": "es" }
+    ]
+  }
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #555555;
+      background-color: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* NAVBAR */
+    .nav-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #ffffff;
+      border-bottom: 1px solid #F5F5F5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1A2E4A;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #555555;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a:hover {
+      color: #C9A84C;
+    }
+
+    .cta-button {
+      background-color: #1A2E4A;
+      color: #ffffff;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      font-size: 13px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background-color 0.3s, color 0.3s;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #C9A84C;
+      color: #1A2E4A;
+    }
+
+    /* HAMBURGUESA MOBILE */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #1A2E4A;
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+      nav {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 16px 0;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 12px;
+        border-top: 1px solid #F0F0F0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { border-bottom: 1px solid #F0F0F0; }
+      .nav-links a { display: block; padding: 14px 0; }
+      .cta-button { display: none; }
+    }
+
+    /* WHATSAPP FLOTANTE */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+    }
+    .whatsapp-main-btn {
+      width: 58px;
+      height: 58px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+    }
+    .whatsapp-main-btn:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+    .whatsapp-main-btn svg { width: 30px; height: 30px; fill: #ffffff; }
+    .whatsapp-popup {
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      overflow: hidden;
+      min-width: 220px;
+    }
+    .whatsapp-popup.open { display: block; }
+    .whatsapp-popup-header {
+      background-color: #1A2E4A;
+      color: #C9A84C;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 10px 16px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .whatsapp-popup a {
+      display: flex;
+      flex-direction: column;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #333;
+      font-size: 13px;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.2s;
+      border-bottom: 1px solid #F5F5F5;
+    }
+    .whatsapp-popup a:last-child { border-bottom: none; }
+    .whatsapp-popup a:hover { background-color: #F5F5F5; }
+    .whatsapp-popup a span { font-weight: 600; color: #1A2E4A; font-size: 12px; }
+    .whatsapp-popup a small { color: #777; font-size: 11px; margin-top: 2px; }
+
+    /* TESTIMONIOS */
+    .testimonios {
+      padding: 100px 0;
+      background-color: #1A2E4A;
+    }
+    .testimonios .section-title {
+      color: #C9A84C;
+    }
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .testimonio-card {
+      background-color: rgba(255,255,255,0.05);
+      border-left: 3px solid #C9A84C;
+      padding: 32px 28px;
+    }
+    .testimonio-texto {
+      font-size: 15px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonio-texto::before { content: '"'; color: #C9A84C; font-size: 24px; line-height: 0; vertical-align: -8px; margin-right: 4px; }
+    .testimonio-texto::after  { content: '"'; color: #C9A84C; font-size: 24px; line-height: 0; vertical-align: -8px; margin-left: 4px; }
+    .testimonio-autor {
+      font-size: 12px;
+      font-weight: 600;
+      color: #C9A84C;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .testimonio-cargo {
+      font-size: 11px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 2px;
+    }
+    @media (max-width: 768px) {
+      .testimonios-grid { grid-template-columns: 1fr; }
+    }
+
+    /* PUBLICACIONES */
+    .publicaciones {
+      padding: 100px 0;
+      background-color: #ffffff;
+    }
+    .pub-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+    .pub-card {
+      border: 1px solid #EEEEEE;
+      padding: 28px;
+      transition: box-shadow 0.3s;
+    }
+    .pub-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+    .pub-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #C9A84C;
+      border: 1px solid #C9A84C;
+      padding: 3px 8px;
+      margin-bottom: 12px;
+    }
+    .pub-card h4 {
+      font-family: 'Playfair Display', serif;
+      color: #1A2E4A;
+      font-size: 17px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .pub-card p {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .pub-autor {
+      font-size: 11px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 768px) {
+      .pub-grid { grid-template-columns: 1fr; }
+    }
+
+    /* HERO ANIMACIONES */
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes heroBadgeFade {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 0.92; transform: translateY(0); }
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(7px); }
+    }
+
+    .hero h1       { animation: heroFadeUp 0.9s ease both; animation-delay: 0.2s; }
+    .hero-subtitle { animation: heroFadeUp 0.9s ease both; animation-delay: 0.45s; }
+    .hero-badge    { animation: heroBadgeFade 0.9s ease both; animation-delay: 0.65s; }
+    .hero-cta-btn  { animation: heroFadeUp 0.9s ease both; animation-delay: 0.8s; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(201,168,76,0.55);
+      padding: 8px 20px;
+      margin-bottom: 28px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #C9A84C;
+      opacity: 0.92;
+      backdrop-filter: blur(4px);
+      background: rgba(26,46,74,0.3);
+    }
+    .hero-badge::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #C9A84C;
+      border-radius: 50%;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(201,168,76,0.6);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      animation: heroBadgeFade 1s ease both;
+      animation-delay: 1.1s;
+    }
+    .hero-scroll svg {
+      animation: scrollBounce 1.8s ease-in-out infinite;
+    }
+
+    /* SCROLL REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* HERO */
+    .hero {
+      padding: 140px 0;
+      background-color: #1A2E4A;
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(26, 46, 74, 0.78) 0%,
+          rgba(26, 46, 74, 0.85) 100%
+        ),
+        url('img/hero-bg.jpg');
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(26, 46, 74, 0.78) 0%,
+          rgba(26, 46, 74, 0.85) 100%
+        ),
+        image-set(
+          url('img/hero-bg.webp') type('image/webp'),
+          url('img/hero-bg.jpg') type('image/jpeg')
+        );
+      background-size: cover;
+      background-position: center 35%;
+      background-attachment: fixed;
+      text-align: center;
+      border-bottom: 4px solid #C9A84C;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #C9A84C;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.45);
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: rgba(255,255,255,0.92);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero-cta-btn {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #1A2E4A;
+      padding: 16px 48px;
+      font-size: 14px;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background-color 0.3s, color 0.3s;
+      text-decoration: none;
+    }
+
+    .hero-cta-btn:hover {
+      background-color: #C9A84C;
+      color: #1A2E4A;
+    }
+
+    /* QUIÉNES SOMOS */
+    .about {
+      padding: 60px 0 20px;
+    }
+
+    .about-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: #1A2E4A;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .about-highlight {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 16px;
+      padding: 20px;
+      background-color: #F5F5F5;
+      border-left: 4px solid #C9A84C;
+    }
+
+    .about-highlight h4 {
+      font-family: 'Playfair Display', serif;
+      color: #1A2E4A;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .about-highlight p {
+      font-size: 13px;
+      margin: 0;
+      color: #555555;
+    }
+
+    .about-image {
+      background-color: #1A2E4A;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #C9A84C;
+      font-size: 60px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* EQUIPO */
+    .team-section {
+      padding: 80px 0;
+      background-color: #F5F5F5;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 32px;
+      background-color: #ffffff;
+      border-bottom: 4px solid #C9A84C;
+      box-shadow: 0 4px 18px rgba(26,46,74,0.06);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      box-shadow: 0 18px 40px rgba(26,46,74,0.14);
+      transform: translateY(-6px);
+    }
+
+    .team-info h3 {
+      font-family: 'Playfair Display', serif;
+      color: #1A2E4A;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .team-info .team-role {
+      color: #C9A84C;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0;
+    }
+
+    .team-photo {
+      width: 190px;
+      height: 240px;
+      background-color: #1A2E4A;
+      margin: 24px auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #C9A84C;
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 700;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 10px 26px rgba(26,46,74,0.18);
+    }
+
+    .team-photo picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .team-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .team-info .team-matricula {
+      font-size: 12px;
+      color: #999999;
+      letter-spacing: 0.3px;
+    }
+
+    .team-catedra {
+      font-size: 12.5px;
+      color: #4a5b73;
+      line-height: 1.55;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #ececec;
+      max-width: 260px;
+    }
+    .team-catedra strong { color: #1A2E4A; }
+    .team-catedra .uba-tag {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #C9A84C;
+    }
+
+    /* EXPLICACIÓN ESTUDIO */
+    .estudio-info {
+      padding: 80px 0;
+      background-color: #ffffff;
+    }
+
+    .estudio-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .estudio-desc p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #555555;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    /* ÁREAS DE PRÁCTICA */
+    .practice-areas {
+      padding: 100px 0;
+      background-color: #F5F5F5;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: #1A2E4A;
+      text-align: center;
+      margin-bottom: 60px;
+      font-weight: 700;
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .area-card {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      text-align: center;
+      border-top: 4px solid #C9A84C;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .area-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+
+    .area-card h3 {
+      font-family: 'Playfair Display', serif;
+      color: #1A2E4A;
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .area-card p {
+      font-size: 14px;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    /* UBA */
+    .uba-section {
+      padding: 100px 0;
+    }
+
+    .uba-section .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .uba-image {
+      height: 420px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    }
+
+    .uba-image picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .uba-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: #1A2E4A;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .uba-content p {
+      font-size: 15px;
+      margin-bottom: 24px;
+      line-height: 1.8;
+      color: #555555;
+    }
+
+    .uba-points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .uba-point {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .uba-point-icon {
+      color: #C9A84C;
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .uba-point-text {
+      font-size: 14px;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    /* CONTACTO */
+    .contact {
+      padding: 100px 0;
+      background-color: #1A2E4A;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #C9A84C;
+    }
+
+    .contact > .container > p {
+      font-size: 16px;
+      margin-bottom: 50px;
+      color: #C9A84C;
+      opacity: 0.9;
+    }
+
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin-bottom: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-method {
+      padding: 30px;
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid #C9A84C;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    .contact-method:hover {
+      background-color: rgba(201, 168, 76, 0.2);
+    }
+
+    .contact-method h3 {
+      font-family: 'Playfair Display', serif;
+      color: #C9A84C;
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .contact-method p {
+      font-size: 14px;
+      margin: 0;
+      color: #C9A84C;
+    }
+
+    .contact-form-btn {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #1A2E4A;
+      padding: 16px 48px;
+      font-size: 14px;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background-color 0.3s, color 0.3s;
+      text-decoration: none;
+    }
+
+    .contact-form-btn:hover {
+      background-color: #C9A84C;
+      color: #1A2E4A;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #0f1a2a;
+      color: #F5F5F5;
+      padding: 50px 0 30px;
+      font-size: 13px;
+      border-top: 1px solid #C9A84C;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+    }
+
+    .footer-section h4 {
+      color: #C9A84C;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-section a {
+      display: block;
+      color: #F5F5F5;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+      font-size: 13px;
+    }
+
+    .footer-section a:hover {
+      color: #C9A84C;
+    }
+
+    .footer-section p {
+      color: #aaaaaa;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #C9A84C;
+      font-weight: 700;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 16px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero {
+        background-attachment: scroll;
+        padding: 100px 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero-subtitle {
+        font-size: 15px;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-photo {
+        height: 220px;
+      }
+
+      .estudio-top {
+        grid-template-columns: 1fr;
+      }
+
+      .highlights-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .uba-section .container {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image,
+      .uba-image {
+        height: 250px;
+        font-size: 40px;
+      }
+
+      .areas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-methods {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .about-title,
+      .section-title,
+      .uba-content h2,
+      .contact h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40f3376a7eeb4ceeabc25c1882e4014d"}'></script><!-- End Cloudflare Web Analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="cc3bcbad-ec55-46f5-9228-bdefe43a8c15"></script>
+</head>
+<body>
+
+<div class="nav-wrapper">
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">CG Estudio Asociados</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#quienes">Quiénes Somos</a></li>
+        <li><a href="#areas">Áreas de Práctica</a></li>
+        <li><a href="#uba">UBA</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="cta-button">Consultar</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">Docentes Activos · Facultad de Derecho · UBA</div>
+    <h1>Excelencia Jurídica<br>con Respaldo Académico</h1>
+    <p class="hero-subtitle">Asesoramiento en derecho civil, corporativo, laboral y contratos, a cargo de socios que enseñan estas materias en la Facultad de Derecho de la UBA.</p>
+    <a href="#contacto" class="hero-cta-btn">Agendar Consulta</a>
+  </div>
+  <a href="#quienes" class="hero-scroll">
+    <span>Ver más</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </a>
+</section>
+
+<section class="about" id="quienes">
+  <div class="container">
+    <h2 class="about-title">Quiénes Somos</h2>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="container">
+    <div class="team-grid">
+
+      <div class="team-card reveal">
+        <div class="team-info">
+          <h3>Cesari Vanina Marisel</h3>
+          <p class="team-role">Abogada · Socia · Docente UBA</p>
+        </div>
+        <div class="team-photo"><picture><source srcset="img/Vanina.webp" type="image/webp"><img src="img/Vanina.jpg" alt="Cesari Vanina Marisel" loading="lazy" width="600" height="700"></picture></div>
+        <div class="team-info">
+          <p class="team-matricula">T° 136 — F° 708 · CPACF</p>
+          <p class="team-catedra">Abogada recibida en la Facultad de Derecho (UBA).<br>Docente de <strong>Práctica Profesional</strong> — Comisión 1109. Facultad de Derecho (UBA).<br><strong>Delegada Liquidadora</strong> designada por la Superintendencia de Seguros de la Nación (SSN).</p>
+        </div>
+      </div>
+
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-info">
+          <h3>Goldaracena Joaquín</h3>
+          <p class="team-role">Abogado · Socio · Docente UBA</p>
+        </div>
+        <div class="team-photo"><picture><source srcset="img/Joaquin.webp" type="image/webp"><img src="img/Joaquin.jpg" alt="Goldaracena Joaquín" loading="lazy" width="600" height="700"></picture></div>
+        <div class="team-info">
+          <p class="team-matricula">T° 81 — F° 941 · CPACF</p>
+          <p class="team-catedra">Abogado recibido en la Facultad de Derecho (UBA).<br>Docente de <strong>Práctica Profesional</strong> — Comisión 1109. Facultad de Derecho (UBA).</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="estudio-info">
+  <div class="container">
+    <div class="estudio-top">
+      <div class="about-image">
+        <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;max-height:400px;">
+          <!-- Fondo -->
+          <rect width="320" height="400" fill="#1A2E4A"/>
+          <!-- Línea superior decorativa -->
+          <rect x="60" y="40" width="200" height="2" fill="#C9A84C" opacity="0.6"/>
+          <!-- Corona/arco superior -->
+          <path d="M160 55 L140 80 L120 70 L130 95 L160 88 L190 95 L200 70 L180 80 Z" fill="#C9A84C" opacity="0.85"/>
+          <!-- Balanza - palo central -->
+          <rect x="158" y="95" width="4" height="80" fill="#C9A84C"/>
+          <!-- Balanza - travesaño -->
+          <rect x="108" y="118" width="104" height="3" fill="#C9A84C"/>
+          <!-- Balanza - cadenas izquierda -->
+          <line x1="120" y1="121" x2="120" y2="148" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <!-- Balanza - cadenas derecha -->
+          <line x1="200" y1="121" x2="200" y2="148" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <!-- Platillo izquierdo -->
+          <ellipse cx="120" cy="152" rx="22" ry="6" fill="none" stroke="#C9A84C" stroke-width="2"/>
+          <path d="M98 152 Q120 162 142 152" fill="#C9A84C" opacity="0.3"/>
+          <!-- Platillo derecho -->
+          <ellipse cx="200" cy="152" rx="22" ry="6" fill="none" stroke="#C9A84C" stroke-width="2"/>
+          <path d="M178 152 Q200 162 222 152" fill="#C9A84C" opacity="0.3"/>
+          <!-- Base balanza -->
+          <rect x="148" y="175" width="24" height="4" rx="2" fill="#C9A84C"/>
+          <rect x="140" y="179" width="40" height="3" rx="1.5" fill="#C9A84C" opacity="0.6"/>
+          <!-- Línea divisora -->
+          <rect x="80" y="205" width="160" height="1" fill="#C9A84C" opacity="0.3"/>
+          <!-- Texto CG -->
+          <text x="160" y="240" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#C9A84C" text-anchor="middle" letter-spacing="6">CG</text>
+          <!-- Texto ESTUDIO -->
+          <text x="160" y="268" font-family="Georgia, serif" font-size="13" fill="#C9A84C" text-anchor="middle" letter-spacing="5" opacity="0.85">ESTUDIO</text>
+          <!-- Texto ASOCIADOS -->
+          <text x="160" y="288" font-family="Georgia, serif" font-size="13" fill="#C9A84C" text-anchor="middle" letter-spacing="5" opacity="0.85">ASOCIADOS</text>
+          <!-- Línea inferior decorativa -->
+          <rect x="80" y="308" width="160" height="1" fill="#C9A84C" opacity="0.3"/>
+          <!-- Texto CABA -->
+          <text x="160" y="330" font-family="Georgia, serif" font-size="10" fill="#C9A84C" text-anchor="middle" letter-spacing="4" opacity="0.5">CABA · ARGENTINA</text>
+          <!-- Línea inferior decorativa -->
+          <rect x="60" y="355" width="200" height="2" fill="#C9A84C" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="estudio-desc">
+        <p>CG Estudio Asociados es un estudio jurídico de referencia en la ciudad de Buenos Aires, especializado en el asesoramiento profesional de personas físicas y empresas. Nuestro diferencial radica en que nuestros socios son docentes activos de la Facultad de Derecho de la Universidad de Buenos Aires, lo que garantiza rigor académico combinado con experiencia práctica en todas nuestras intervenciones.</p>
+      </div>
+    </div>
+    <div class="highlights-grid">
+      <div class="about-highlight reveal">
+        <div>
+          <h4>⚖️ Compromiso</h4>
+          <p>Atención personalizada y clara, sin jerga innecesaria. El saber al servicio del cliente.</p>
+        </div>
+      </div>
+      <div class="about-highlight reveal reveal-delay-1">
+        <div>
+          <h4>📚 Autoridad</h4>
+          <p>Formación continua en la UBA y publicaciones académicas que respaldan nuestro criterio jurídico.</p>
+        </div>
+      </div>
+      <div class="about-highlight reveal reveal-delay-2">
+        <div>
+          <h4>💼 Experiencia</h4>
+          <p>Más de 15 años asistiendo a clientes en las áreas más complejas del derecho argentino.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="practice-areas" id="areas">
+  <div class="container">
+    <h2 class="section-title">Áreas de Práctica</h2>
+
+    <div class="areas-grid">
+      <div class="area-card reveal">
+        <h3>Derecho Civil</h3>
+        <p>Sucesiones, divorcios, daños y perjuicios, contratos civiles, resolución de conflictos patrimoniales.</p>
+      </div>
+
+      <div class="area-card reveal reveal-delay-1">
+        <h3>Derecho Corporativo</h3>
+        <p>Constitución de sociedades, fusiones y adquisiciones, gobiernos corporativos, resolución de conflictos entre socios.</p>
+      </div>
+
+      <div class="area-card reveal reveal-delay-2">
+        <h3>Derecho Laboral</h3>
+        <p>Conflictos laborales, negociación de convenios, despidos, resolución ante el Ministerio de Trabajo.</p>
+      </div>
+
+      <div class="area-card reveal reveal-delay-3">
+        <h3>Contratos</h3>
+        <p>Redacción, revisión y negociación de contratos civiles y comerciales, resolución de conflictos contractuales y asesoramiento en su cumplimiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="uba-section" id="uba">
+  <div class="container">
+    <div class="uba-image" style="overflow:hidden;border:none;padding:0;">
+      <picture><source srcset="img/uba.webp" type="image/webp"><img src="img/uba.jpg" alt="Facultad de Derecho UBA" loading="lazy" width="800" height="600" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;"></picture>
+    </div>
+
+    <div class="uba-content">
+      <h2>Nuestro Orgullo: La UBA</h2>
+      <p>Ambos socios dictan <strong>Práctica Profesional (Comisión 1109)</strong> en la Facultad de Derecho de la Universidad de Buenos Aires. No es un dato decorativo: enseñar la práctica del derecho todos los días es lo que mantiene nuestro criterio afilado y actualizado.</p>
+
+      <div class="uba-points">
+        <div class="uba-point">
+          <div class="uba-point-icon">✓</div>
+          <div class="uba-point-text"><strong>Actualización permanente</strong> en los cambios legislativos, jurisprudencia y nuevas corrientes del pensamiento jurídico.</div>
+        </div>
+
+        <div class="uba-point">
+          <div class="uba-point-icon">✓</div>
+          <div class="uba-point-text"><strong>Rigor académico</strong> en cada análisis. No improvisamos: fundamentamos en doctrina y jurisprudencia consolidada.</div>
+        </div>
+
+        <div class="uba-point">
+          <div class="uba-point-icon">✓</div>
+          <div class="uba-point-text"><strong>Red de especialistas</strong> del ámbito académico a los que podemos recurrir para casos complejos.</div>
+        </div>
+
+        <div class="uba-point">
+          <div class="uba-point-icon">✓</div>
+          <div class="uba-point-text"><strong>Publicaciones e investigación</strong> que demuestran nuestro compromiso con el conocimiento jurídico.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contacto">
+  <div class="container">
+    <h2>Comenzá tu Consulta Hoy</h2>
+    <p>Nos enorgullece acompañar a nuestros clientes en los momentos más desafiantes. Contactanos para conocer cómo podemos asistirte.</p>
+
+    <div class="contact-methods">
+
+      <div class="contact-method">
+        <h3>💬 WhatsApp</h3>
+        <a href="https://wa.me/5491163063149" target="_blank" style="display:block;color:#C9A84C;text-decoration:none;font-size:14px;margin-bottom:6px;">Joaquín: 11 6306-3149</a>
+        <a href="https://wa.me/5491161211149" target="_blank" style="display:block;color:#C9A84C;text-decoration:none;font-size:14px;">Vanina: 11 6121-1149</a>
+      </div>
+
+      <a href="mailto:cg.estudio.asociados@gmail.com" class="contact-method">
+        <h3>✉️ Email</h3>
+        <p>cg.estudio.asociados@gmail.com</p>
+      </a>
+
+    </div>
+
+    <style>
+      .cg-form { max-width: 640px; margin: 48px auto 0; text-align: left; }
+      .cg-form .row { display: flex; gap: 16px; flex-wrap: wrap; }
+      .cg-form .row > * { flex: 1 1 220px; }
+      .cg-form label { display: block; font-size: 13px; font-weight: 600; color: #EDE7D9; margin: 0 0 6px; letter-spacing: .2px; }
+      .cg-form label .req { color: #C9A84C; margin-left: 2px; }
+      .cg-form input, .cg-form select, .cg-form textarea {
+        width: 100%; padding: 12px 14px; margin-bottom: 18px;
+        border: 1px solid #d8d8d8; border-radius: 8px; font-family: inherit; font-size: 15px;
+        color: #333; background: #fff; transition: border-color .2s, box-shadow .2s;
+      }
+      .cg-form input:focus, .cg-form select:focus, .cg-form textarea:focus {
+        outline: none; border-color: #C9A84C; box-shadow: 0 0 0 3px rgba(201,168,76,0.18);
+      }
+      .cg-form textarea { min-height: 130px; resize: vertical; }
+      .cg-form button {
+        background: #C9A84C; color: #1A2E4A; border: none; border-radius: 8px;
+        padding: 15px 36px; font-family: inherit; font-size: 15px; font-weight: 600;
+        cursor: pointer; transition: transform .15s, box-shadow .2s; letter-spacing: .3px;
+      }
+      .cg-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,168,76,0.35); }
+      .cg-form .form-note { font-size: 12px; color: #aeb7c4; margin-top: 14px; }
+      .cg-form .hp { position: absolute; left: -5000px; }
+      .cg-form .consent { display: flex; align-items: flex-start; gap: 10px; margin: 4px 0 22px; text-align: left; }
+      .cg-form .consent input { width: auto; margin: 3px 0 0; flex: 0 0 auto; accent-color: #C9A84C; }
+      .cg-form .consent label { font-weight: 400; font-size: 12.5px; color: #cdd4de; margin: 0; }
+      .cg-form .consent a { color: #C9A84C; text-decoration: underline; }
+    </style>
+
+    <form class="cg-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?enviado=1#contacto">
+      <input type="hidden" name="form-name" value="contacto">
+      <p class="hp"><label>No completar: <input name="bot-field"></label></p>
+
+      <div class="row">
+        <div>
+          <label for="cg-nombre">Nombre y apellido<span class="req">*</span></label>
+          <input id="cg-nombre" type="text" name="nombre" required autocomplete="name">
+        </div>
+        <div>
+          <label for="cg-email">Email<span class="req">*</span></label>
+          <input id="cg-email" type="email" name="email" required autocomplete="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="cg-tel">Teléfono / WhatsApp</label>
+          <input id="cg-tel" type="tel" name="telefono" autocomplete="tel">
+        </div>
+        <div>
+          <label for="cg-area">Área de consulta</label>
+          <select id="cg-area" name="area">
+            <option value="">Seleccionar…</option>
+            <option>Derecho Civil</option>
+            <option>Derecho Corporativo</option>
+            <option>Derecho Laboral</option>
+            <option>Contratos</option>
+            <option>Otra</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="cg-msg">Contanos tu caso<span class="req">*</span></label>
+      <textarea id="cg-msg" name="mensaje" required placeholder="Describí brevemente tu consulta…"></textarea>
+
+      <div class="consent">
+        <input id="cg-consent" type="checkbox" name="consentimiento" value="si" required>
+        <label for="cg-consent">Presto mi consentimiento para que CG Estudio Asociados trate mis datos personales con el fin de responder esta consulta, conforme a la <a href="privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a> (Ley 25.326).</label>
+      </div>
+
+      <button type="submit">Enviar Consulta</button>
+      <p class="form-note">Te respondemos a la brevedad. Tus datos se usan únicamente para responder esta consulta y no se comparten con terceros.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Estudio</h4>
+        <a href="#quienes">Quiénes Somos</a>
+        <a href="#uba">Equipo y Docencia</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Práctica</h4>
+        <a href="#areas">Derecho Civil</a>
+        <a href="#areas">Derecho Corporativo</a>
+        <a href="#areas">Derecho Laboral</a>
+        <a href="#areas">Contratos</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>📍 Ciudad Autónoma de Buenos Aires</p>
+        <a href="mailto:cg.estudio.asociados@gmail.com">cg.estudio.asociados@gmail.com</a>
+        <a href="#contacto">Agendar Consulta</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">CG ESTUDIO ASOCIADOS</div>
+      <p style="margin: 0; color: #9a9a9a; font-size: 12px;">Diseñado por <a href="https://eltanodesign.com.ar" target="_blank" rel="noopener noreferrer" style="color:#C9A84C;text-decoration:underline;">El Tano Design</a></p>
+      <p style="margin: 0; color: #9a9a9a; font-size: 12px;">© 2026 CG Estudio Asociados. CABA, Argentina. · <a href="privacidad.html" style="color:#C9A84C;text-decoration:underline;">Política de Privacidad</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<div class="whatsapp-float">
+  <div class="whatsapp-popup" id="waPopup">
+    <div class="whatsapp-popup-header">Contactar por WhatsApp</div>
+    <a href="https://wa.me/5491163063149" target="_blank">
+      <span>Joaquín Goldaracena</span>
+      <small>11 6306-3149</small>
+    </a>
+    <a href="https://wa.me/5491161211149" target="_blank">
+      <span>Vanina Cesari</span>
+      <small>11 6121-1149</small>
+    </a>
+  </div>
+  <button class="whatsapp-main-btn" id="waBtn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </button>
+</div>
+
+<script>
+  // Hamburguesa
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+
+  // WhatsApp flotante
+  const waBtn = document.getElementById('waBtn');
+  const waPopup = document.getElementById('waPopup');
+  waBtn.addEventListener('click', () => {
+    waPopup.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.whatsapp-float')) {
+      waPopup.classList.remove('open');
+    }
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Envío del formulario por AJAX → sin recarga, sin "confirmar reenvío"
+  const cgForm = document.querySelector('.cg-form');
+  if (cgForm) {
+    const showGracias = () => {
+      const ok = document.createElement('div');
+      ok.style.cssText = 'max-width:640px;margin:48px auto 0;padding:28px 32px;border-radius:12px;background:#f3f8f2;border:1px solid #cfe6cb;text-align:center;color:#1A2E4A;';
+      ok.innerHTML = '<div style="font-size:34px;margin-bottom:8px;">✓</div><h3 style="margin:0 0 8px;color:#1A2E4A;">¡Gracias por tu consulta!</h3><p style="margin:0;color:#555;">Recibimos tu mensaje y te vamos a responder a la brevedad.</p>';
+      cgForm.replaceWith(ok);
+      document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+    };
+    cgForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = cgForm.querySelector('button[type="submit"]');
+      const original = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
+      try {
+        const body = new URLSearchParams(new FormData(cgForm)).toString();
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body
+        });
+        if (!res.ok) throw new Error('status ' + res.status);
+        showGracias();
+      } catch (err) {
+        if (btn) { btn.disabled = false; btn.textContent = original; }
+        alert('No pudimos enviar tu consulta. Por favor, escribinos por WhatsApp o a cg.estudio.asociados@gmail.com.');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
