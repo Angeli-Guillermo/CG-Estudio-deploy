@@ -339,10 +339,26 @@
     }
     .pub-autor {
       font-size: 11px;
-      color: #999;
+      color: #6B6B6B;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      margin-bottom: 14px;
     }
+    .pub-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #876D2C;
+      text-decoration: none;
+      border-bottom: 1.5px solid #C9A84C;
+      padding-bottom: 2px;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .pub-link:hover { color: #1A2E4A; border-color: #1A2E4A; }
     @media (max-width: 768px) {
       .pub-grid { grid-template-columns: 1fr; }
     }
@@ -1084,7 +1100,7 @@
         <div class="team-photo"><picture><source srcset="img/Joaquin.webp" type="image/webp"><img src="img/Joaquin.jpg" alt="Goldaracena Joaquín" loading="lazy" width="600" height="700"></picture></div>
         <div class="team-info">
           <p class="team-matricula">T° 81 — F° 941 · CPACF</p>
-          <p class="team-catedra">Abogado recibido en la Facultad de Derecho (UBA).<br>Docente de <strong>Práctica Profesional</strong> — Comisión 1109. Facultad de Derecho (UBA).</p>
+          <p class="team-catedra">Abogado recibido en la Facultad de Derecho (UBA).<br>Profesor titular de <strong>Práctica Profesional</strong> — Comisión 1109, Departamento de Práctica Profesional, Facultad de Derecho (UBA), desde 2008.</p>
         </div>
       </div>
 
@@ -1186,6 +1202,30 @@
       <div class="area-card reveal reveal-delay-3">
         <h3>Contratos</h3>
         <p>Redacción, revisión y negociación de contratos civiles y comerciales, resolución de conflictos contractuales y asesoramiento en su cumplimiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="publicaciones" id="publicaciones">
+  <div class="container">
+    <h2 class="section-title">Publicaciones</h2>
+
+    <div class="pub-grid">
+      <div class="pub-card reveal">
+        <span class="pub-tag">Derecho Constitucional</span>
+        <h4>El nombramiento de jueces por el Poder Ejecutivo durante el receso del Poder Legislativo</h4>
+        <p>Análisis del art. 99 inc. 19 de la Constitución Nacional a la luz del decreto presidencial que designó jueces de la Corte Suprema durante el receso del Congreso, en comparación con la jurisprudencia de la Corte Suprema de EE.UU. sobre la cláusula equivalente.</p>
+        <p class="pub-autor">Joaquín E. Goldaracena · La Ley Online, 2016 (Cita: AR/DOC/133/2016)</p>
+        <a class="pub-link" href="publicaciones/goldaracena-nombramiento-jueces-receso-legislativo-2016.pdf" target="_blank" rel="noopener">Leer publicación →</a>
+      </div>
+
+      <div class="pub-card reveal reveal-delay-1">
+        <span class="pub-tag">Derecho Administrativo</span>
+        <h4>La servidumbre administrativa de paso de gasoducto</h4>
+        <p>Precisiones sobre la prescripción aplicable a los créditos por el canon que las licenciatarias de transporte de gas deben abonar a los propietarios de los fundos afectados por la servidumbre administrativa de paso de gasoducto (Ley 24.076).</p>
+        <p class="pub-autor">Joaquín E. Goldaracena · elDial.com, 2011</p>
+        <a class="pub-link" href="https://www.eldial.com/nuevo/nuevo_diseno/v2/doctrina2.asp?id=5757&base=50&id_publicar=&fecha_publicar=08/07/2011&indice=doctrina&suple=Derecho%20Administrativo" target="_blank" rel="noopener">Leer publicación →</a>
       </div>
     </div>
   </div>
