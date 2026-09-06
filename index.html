@@ -1276,9 +1276,8 @@
       .cg-form .consent a { color: #C9A84C; text-decoration: underline; }
     </style>
 
-    <form class="cg-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?enviado=1#contacto">
-      <input type="hidden" name="form-name" value="contacto">
-      <p class="hp"><label>No completar: <input name="bot-field"></label></p>
+    <form class="cg-form" name="contacto" method="POST">
+      <p class="hp"><label>No completar: <input name="bot-field" autocomplete="off" tabindex="-1"></label></p>
 
       <div class="row">
         <div>
@@ -1432,11 +1431,20 @@
       const original = btn ? btn.textContent : '';
       if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
       try {
-        const body = new URLSearchParams(new FormData(cgForm)).toString();
-        const res = await fetch('/', {
+        const fd = new FormData(cgForm);
+        const payload = {
+          nombre: fd.get('nombre'),
+          email: fd.get('email'),
+          telefono: fd.get('telefono'),
+          area: fd.get('area'),
+          mensaje: fd.get('mensaje'),
+          consentimiento: fd.get('consentimiento') === 'si',
+          botField: fd.get('bot-field'),
+        };
+        const res = await fetch('/api/leads', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
         });
         if (!res.ok) throw new Error('status ' + res.status);
         showGracias();
