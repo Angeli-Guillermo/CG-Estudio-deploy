@@ -1,0 +1,39 @@
+name: Uptime
+
+# Chequeo diario de que el sitio y su funcion de contacto/pedidos estan vivos.
+# Vive en GitHub Actions (con internet y fuera de Vercel): si algo falla, el
+# job queda en rojo y GitHub avisa por mail.
+# - El sitio debe responder 200.
+# - La funcion se prueba con GET, que devuelve 405 por diseno: NO manda ningun
+#   email. Solo se considera caida si no responde o devuelve 5xx.
+# Nota: GitHub desactiva los workflows programados tras 60 dias sin actividad
+# en el repo; si pasa, se reactiva a mano desde la pestana Actions.
+
+on:
+  schedule:
+    - cron: '17 11 * * *' # 11:17 UTC (08:17 Argentina)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  uptime:
+    name: Sitio y funcion responden
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SITE: https://cgestudioasociados.com.ar
+      API_PATH: '/api/leads'
+    steps:
+      - name: Sitio responde 200
+        run: |
+          code=$(curl -sL -o /dev/null -m 30 --retry 3 --retry-delay 10 --retry-all-errors -w '%{http_code}' "$SITE" || true)
+          echo "$SITE -> $code"
+          [ "$code" = "200" ] || { echo "::error::$SITE devolvio $code (se esperaba 200)"; exit 1; }
+      - name: Funcion viva (GET, sin enviar nada)
+        if: ${{ env.API_PATH != '' }}
+        run: |
+          code=$(curl -s -o /dev/null -m 30 --retry 3 --retry-delay 10 --retry-all-errors -w '%{http_code}' "$SITE$API_PATH" || true)
+          echo "$SITE$API_PATH -> $code"
+          if [ "$code" = "000" ] || [ "$code" -ge 500 ]; then echo "::error::$API_PATH devolvio $code"; exit 1; fi
